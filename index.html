@@ -22,17 +22,19 @@
         <form id="contactForm">
 
             <input type="text" 
-                    placeholder="Your Name*" pattern="[A-Za-z ] +
+                    placeholder="Your Name*" pattern="[A-Za-z]+\s[a-zA-Z] +
                      "title="Only letters are allowed" required>
 
             <input type="email" 
                         placeholder="Email *"
                         required>
            
-             <input type="text" 
-                    placeholder="Last Name*" 
-                        pattern="[A-Za-z ]+"
-                        title="Only letters are allowed" required>
+                 <input
+         type="tel" 
+         placeholder="Phone *"
+         pattern="[0-9]{10}"
+         title="Enter a valid 10 digit number" required>
+    
             <textarea id="message" placeholder="Your Message"></textarea>
 
             <button type="submit">Send Message</button>
